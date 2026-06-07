@@ -1,0 +1,108 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, sans-serif;
+    background: #f5e6da;
+    color: #3b2417;
+}
+
+/* HEADER */
+
+header{
+    background: linear-gradient(to right, #2b170d, #5c3317, #8b5a2b);
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
+
+header h1{
+    font-size: 55px;
+    margin-bottom: 10px;
+}
+
+header p{
+    font-size: 18px;
+    color: #f3d2b5;
+}
+
+/* CONTAINER */
+
+.container{
+    width: 90%;
+    margin: auto;
+    padding: 40px 0;
+}
+
+/* RECEITAS */
+
+.receitas{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px,1fr));
+    gap: 25px;
+}
+
+/* CARD */
+
+.card{
+    background: #fff8f2;
+    border-radius: 18px;
+    overflow: hidden;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+    transition: 0.3s;
+    border: 2px solid #c49a6c;
+}
+
+.card:hover{
+    transform: translateY(-8px);
+}
+
+.card img{
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+}
+
+.card-content{
+    padding: 20px;
+}
+
+.card-content h2{
+    color: #5c3317;
+    margin-bottom: 15px;
+    font-size: 28px;
+}
+
+.card-content h3{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: #7b3f00;
+}
+
+.card-content ul{
+    margin-left: 20px;
+    margin-bottom: 15px;
+}
+
+.card-content li{
+    margin-bottom: 5px;
+}
+
+.card-content p{
+    line-height: 1.6;
+    color: #5c4033;
+}
+
+/* FOOTER */
+
+footer{
+    background: linear-gradient(to right, #2b170d, #5c3317);
+    color: #f3d2b5;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
